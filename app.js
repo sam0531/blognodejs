@@ -11,12 +11,12 @@ const app = express();
 const port = 9000;
 
 app.use(cors());
-app.use("/", bollyRouter);
-app.use("/", fitnessRouter);
-app.use("/", foodRouter);
-app.use("/", hollyRouter);
-app.use("/", techRouter);
-app.use("/", trendRouter);
+app.use("/s", bollyRouter);
+app.use("/s", fitnessRouter);
+app.use("/s", foodRouter);
+app.use("/s", hollyRouter);
+app.use("/s", techRouter);
+app.use("/s", trendRouter);
 
 
 app.listen(process.env.PORT || port, ()=>{
